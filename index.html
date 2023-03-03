@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <title>MinecraftLevne.cz</title>
+    <!-- Include Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+          integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- jQuery 3.2.1 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Popper.js 1.12.9 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <!-- Bootstrap 4.0.0 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/11b4750eb6.js" crossorigin="anonymous"></script>
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style/style.css">
+    <meta charset="UTF-8">
+</head>
+
+<body class="bg-custom">
+<!--
+NAVBAR
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand" href="#">LevnejMinecraft.cz</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Domov</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#products">Produkty</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Kontakt</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">TOS</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+-->
+
+<!-- Modal -->
+<div class="modal fade" style="margin-top: 20rem" id="purchase_info" tabindex="-1" role="dialog"
+     aria-labelledby="purchase_info" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-body rounded card-background shadow shadow-lg">
+                <ul class="list-group mb-3">
+                    <li class="list-group-item disabled">Cras justo odio</li>
+                    <li class="list-group-item">Dapibus ac facilisis in</li>
+                    <li class="list-group-item">Morbi leo risus</li>
+                    <li class="list-group-item">Porta ac consectetur ac</li>
+                    <li class="list-group-item">Vestibulum at eros</li>
+                </ul>
+                <div class="float-right">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Zpět</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--
+HERO SECTION
+-->
+
+<section class="text-center one-page">
+    <div class="jumbotron jumbotron-fluid bg-custom text-white">
+        <div class="container-fluid mt-5">
+            <a href="#"><img src="img/logo.png" alt="dsds" class="w-100 floating logo"></a>
+        </div>
+    </div>
+    <a href="#products">
+        <button class="btn btn-lg slider-icon slider rounded">
+            <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="currentColor" class="bi bi-mouse"
+                 viewBox="0 0 16 16">
+                <path d="M8 3a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 3zm4 8a4 4 0 0 1-8 0V5a4 4 0 1 1 8 0v6zM8 0a5 5 0 0 0-5 5v6a5 5 0 0 0 10 0V5a5 5 0 0 0-5-5z"/>
+            </svg>
+        </button>
+    </a>
+</section>
+
+<!--
+PRODUCTS
+-->
+
+<section class="bg-custom text-white" id="products">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <img src="img/minecraft_text.png" class="w-100 d-block mb-3">
+                <!-- <h1 class="text-left font-weight-bold mb-4 text-center">Originální Minecraft Účet</h1>-->
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-6 mb-3">
+                <div class="card card-background text-white shadow shadow-md">
+                    <!--<div class="card-body text-center">-->
+                    <img src="img/steve.png" class=" rounded zoom shadow shadow-md">
+                    <!--</div>-->
+                </div>
+            </div>
+
+            <div class="col-sm-12 col-md-12 col-lg-6">
+                <div class="card card-background text-white shadow shadow-md">
+                    <div class="card-body">
+                        <div class="card-title card-background rounded">
+                            <h2 class="card-title p-0 m-0 text-center">Zakoupit</h2>
+                        </div>
+                        <hr>
+                        <h5>Cena: <span class="badge bg-success float-right text-white shadow shadow-sm">499 CZK</span>
+                        </h5>
+                        <hr>
+                        <div class="text-center" style="font-size: 1.3rem">
+                            <span class="text-white badge bg-custom shadow shadow-sm"><i
+                                    class="fas fa-solid fa-check"></i> Doručení na E-Mail</span>
+                            <span class="text-white badge bg-custom shadow shadow-sm"><i
+                                    class="fas fa-solid fa-check"></i> Kvalita a spolehlivost</span>
+                            <span class="text-white badge bg-custom shadow shadow-sm"><i
+                                    class="fas fa-solid fa-check"></i> Nejlevnější v ČR a SK</span>
+                        </div>
+                        <hr>
+                        <a data-shoppy-product="rtCQHvk" class="btn btn-lg btn-success w-100 shadow-sm">Zaplatit</a>
+                    </div>
+                </div>
+                <div class="card card-background text-white shadow shadow-md mt-3">
+                    <div class="card-body">
+                        <div class="card-title card-background rounded">
+                            <h5 class="card-title">Co obdržíte po zakoupení?</h5>
+                        </div>
+                        <a data-toggle="modal" data-target="#purchase_info"><img src="img/chest.webp" alt="chest"
+                                                                                 class="w-25 rounded mx-auto d-block zoom"></a>
+                        <h5 class="text-center mt-4"><span class="badge badge-lg bg-custom shadow shadow-sm"
+                                                           style="font-size: 1.3rem">Klikněte na chestku!</span>
+                        </h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--
+FOOTER
+-->
+
+<footer class="bg-custom py-4">
+    <div class="container mt-5">
+        <div class="row mb-4">
+            <div class="col-auto">
+                <a href="#" class="text-white"><i class="zoomFaceBook fab fa-facebook fa-3x"></i></a>
+            </div>
+            <div class="col-auto">
+                <a href="#" class="text-white"><i class="zoomDiscord fab fa-discord fa-3x"></i></a>
+            </div>
+            <div class="col-auto">
+                <a href="#" class="text-white"><i class="zoomInstagram fab fa-instagram fa-3x"></i></a>
+            </div>
+            <div class="col-auto">
+                <a href="#" class="text-white"><i class="zoomTikTok fab fa-tiktok fa-3x"></i></a>
+            </div>
+        </div>
+        <button class="btn btn-info shadow shadow-md">
+            <a href="https://shoppy.gg/legal/terms" target="_blank" class="text-white">TOS</a>
+        </button>
+        <button class="btn btn-info shadow shadow-md">
+            <a href="https://shoppy.gg/@SellaxStore/query" target="_blank" class="text-white">Kontakt</a>
+        </button>
+        <button class="btn btn-info shadow shadow-md">
+            <a href="https://shoppy.gg/@SellaxStore/feedback" target="_blank" class="text-white">Feedback</a>
+        </button>
+        <p class="text-white mt-4">Copyright &copy; 2023, MinecraftLevne.cz, all rights reserved.</p>
+    </div>
+</footer>
+
+
+</body>
+</html>
+<script type="text/javascript" src="https://shoppy.gg/api/embed.js"></script>
+<script>
+    let docTitle = document.title;
+    window.addEventListener("blur", () => {
+        document.title = "Vraťte se zpět, prosím!";
+    })
+    window.addEventListener("focus", () => {
+        document.title = docTitle;
+    })
+
+    function clickEffect(e) {
+        var d = document.createElement("div");
+        d.className = "clickEffect";
+        d.style.top = e.clientY + "px";
+        d.style.left = e.clientX + "px";
+        document.body.appendChild(d);
+        d.addEventListener('animationend', function () {
+            d.parentElement.removeChild(d);
+        }.bind(this));
+    }
+
+    document.addEventListener('click', clickEffect);
+</script>

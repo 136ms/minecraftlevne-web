@@ -1,0 +1,259 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.fa-heart {
+    color: red;
+}
+
+body {
+    margin: 0;
+}
+
+.one-page {
+    min-height: 100vh;
+}
+
+
+.floating {
+    animation-name: floating;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+
+}
+
+@keyframes floating {
+    0% {
+        transform: translate(0, 0px);
+    }
+    50% {
+        transform: translate(0, 25px);
+    }
+    100% {
+        transform: translate(0, 0px);
+    }
+}
+
+.logo {
+    margin-top: 19rem;
+}
+
+.slider-icon {
+    margin-top: 10rem;
+}
+
+.bg-custom {
+    background-color: #1B9AAA;
+}
+
+.slider {
+    opacity: 50%;
+    color: white;
+}
+
+.slider:hover {
+    animation-name: fadeIn;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes fadeIn {
+    0% {
+        color: #06d6a0;
+        opacity: 100%;
+        transform: translate(0, 0)
+    }
+    50% {
+        color: white;
+        opacity: 100%;
+        transform: translate(0, 50px)
+    }
+    100% {
+        color: #06d6a0;
+        opacity: 100%;
+        transform: translate(0, 0)
+    }
+}
+
+.zoomFaceBook:hover {
+    animation-name: zoomFaceBook;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+    cursor: pointer;
+}
+
+@keyframes zoomFaceBook {
+    1% {
+        color: #4267B2;
+        opacity: 100%;
+        transform: scale(1)
+    }
+    50% {
+        color: white;
+        opacity: 100%;
+    }
+    100% {
+        color: #4267B2;
+        opacity: 100%;
+        transform: scale(1.05)
+    }
+}
+
+.zoomDiscord:hover {
+    animation-name: zoomDiscord;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+    cursor: pointer;
+}
+
+@keyframes zoomDiscord {
+    1% {
+        color: #7289da;
+        opacity: 100%;
+        transform: scale(1)
+    }
+    50% {
+        color: white;
+        opacity: 100%;
+    }
+    100% {
+        color: #7289da;
+        opacity: 100%;
+        transform: scale(1.05)
+    }
+}
+
+.zoomInstagram:hover {
+    animation-name: zoomInstagram;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+    cursor: pointer;
+}
+
+@keyframes zoomInstagram {
+    1% {
+        color: #E1306C;
+        opacity: 100%;
+        transform: scale(1)
+    }
+    50% {
+        color: white;
+        opacity: 100%;
+    }
+    100% {
+        color: #E1306C;
+        opacity: 100%;
+        transform: scale(1.05)
+    }
+}
+
+.zoomTikTok:hover {
+    animation-name: zoomTikTok;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+    cursor: pointer;
+}
+
+@keyframes zoomTikTok {
+    1% {
+        color: #EE1D52;
+        opacity: 100%;
+        transform: scale(1)
+    }
+    50% {
+        color: white;
+        opacity: 100%;
+    }
+    100% {
+        color: #EE1D52;
+        opacity: 100%;
+        transform: scale(1.05)
+    }
+}
+
+.zoom:hover {
+    animation-name: zoom;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+    cursor: pointer;
+}
+
+@keyframes zoom {
+    1% {
+        color: #06d6a0;
+        opacity: 100%;
+        transform: scale(1)
+    }
+    50% {
+        color: white;
+        opacity: 100%;
+    }
+    100% {
+        color: #06d6a0;
+        opacity: 100%;
+        transform: scale(1.05)
+    }
+}
+
+.card-background {
+    background-color: #70ABAF;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #06d6a0;
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #06d6a0;
+}
+
+
+div.clickEffect {
+    position: fixed;
+    box-sizing: border-box;
+    border-style: solid;
+    border-color: #FFFFFF;
+    border-radius: 50%;
+    animation: clickEffect 0.4s ease-out;
+    z-index: 99999;
+}
+
+@keyframes clickEffect {
+    0% {
+        opacity: 1;
+        width: 0.5em;
+        height: 0.5em;
+        margin: -0.25em;
+        border-width: 0.5em;
+    }
+    100% {
+        opacity: 0.2;
+        width: 15em;
+        height: 15em;
+        margin: -7.5em;
+        border-width: 0.03em;
+    }
+}
